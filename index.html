@@ -3,27 +3,87 @@
 <head>
 <title>JINA WEB - Welcom</title>
 <meta charset ="utf-8">
+
+<style>
+h1 {
+text-align:center;
+border-bottom:1px solid black;
+padding:30px;
+margin:0;}
+
+#grid ol {
+  font-size:20px;
+  border-right:1px solid gray;
+  width: 100px;
+  margin:0;
+  padding-top:40px;
+  padding-left:33px;
+  padding-right:20px;
+}
+body{
+  margin:0;
+}
+
+#grid {
+
+  display:grid;
+  grid-template-columns:180px 1fr;
+}
+
+#article {
+  padding-left :15px;
+}
+
+@media(max-width:600px){
+h1 {
+  border:none;
+}
+ #grid {
+   display:block;
+ }
+#grid ol {
+  border-bottom:2px solid gray;
+  border-right:none;
+  font-size:25.6px;
+  width: 500px;
+  padding-bottom:10px;
+
+}
+
+h2 {
+  font-size:30px;
+}
+}
+    </style>
+
 </head>
 <body>
 
 <h1><a href="index.html">WEB</a></h1>
+
 <input type="checkbox">
+
+<div id="grid">
 <ol>
   <li><a href="1.html">HTML</a></li>
   <li><a href="2.html">CSS</a></li>
   <li><a href="3.html">Java Script</a></li>
-
+  <li><a href="css.html">study</a></li>
+  <li><a href="box.html">box</a></li>
 </ol>
 <ul hidden>
   <li>진아</li>
   <li>채니</li>
   <li>차니</li>
 </ul>
+<div id="article">
 <p>
 <iframe width="330" height="150" src="https://www.youtube.com/embed/JUNFoER12kk" frameborder="10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 <h2>WEB</h2>
 웹이다 댓글부탁
+</div>
+</div>
 <div id="disqus_thread"></div>
 <script>
 

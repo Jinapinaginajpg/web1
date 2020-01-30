@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>book</title>
+<style>
+h1 {
+text-align:center;
+border-bottom:1px solid black;
+padding:30px;
+margin:0;}
+
+#grid ol {
+  font-size:20px;
+  border-right:1px solid gray;
+  width: 100px;
+  margin:0;
+  padding-top:40px;
+  padding-left:33px;
+  padding-right:20px;
+}
+body{
+  margin:0;
+}
+
+#grid {
+
+  display:grid;
+  grid-template-columns:180px 1fr;
+}
+
+#article {
+  padding-left :15px;
+}
+
+@media(max-width:600px){
+h1 {
+  border:none;
+}
+ #grid {
+   display:block;
+ }
+#grid ol {
+  border-bottom:2px solid gray;
+  border-right:none;
+  font-size:25.6px;
+  width: 500px;
+  padding-bottom:10px;
+
+}
+
+h2 {
+  font-size:30px;
+}
+}
+    </style>
+  </head>
+<body>
+
+
+<h1>CSS</h1>
+
+<div id="grid">
+
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Java Script</li>
+  </ol>
+
+<div id="article">
+  <h2> CSS </h2>
+  Cascading Style Sheets <a href="https://ko.wikipedia.org/wiki/%EC%A2%85%EC%86%8D%ED%98%95_%EC%8B%9C%ED%8A%B8" target="_top" title="css">(CSS)</a> is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+</div>
+</div>
+</body>
+</html>

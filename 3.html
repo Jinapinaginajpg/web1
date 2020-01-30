@@ -3,22 +3,91 @@
 <head>
 <title>JINA WEB-JAVA script</title>
 <meta charset ="utf-8">
+
+<style>
+h1 {
+text-align:center;
+border-bottom:1px solid black;
+padding:30px;
+margin:0;}
+
+#grid ol {
+  font-size:20px;
+  border-right:1px solid gray;
+  width: 100px;
+  margin:0;
+  padding-top:40px;
+  padding-left:33px;
+  padding-right:20px;
+}
+body{
+  margin:0;
+}
+
+#grid {
+
+  display:grid;
+  grid-template-columns:180px 1fr;
+}
+
+#article {
+  padding-left :15px;
+}
+
+@media(max-width:600px){
+h1 {
+  border:none;
+}
+ #grid {
+   display:block;
+ }
+#grid ol {
+  border-bottom:2px solid gray;
+  border-right:none;
+  font-size:25.6px;
+  width: 500px;
+  padding-bottom:10px;
+
+}
+
+h2 {
+  font-size:30px;
+}
+}
+    </style>
 </head>
 <body>
 
+
+
+  <style>
+  a {color:red;
+  text-decoration:none;}
+    </style>
+  <ol>
+
+<style>
+h1 {text-align: center; font-size: 200%;}
+</style>
+
 <h1><a href="index.html">WEB</a></h1>
 
-<ol>
-  <li><a href="1.html">HTML</a></li>
-  <li><a href="2.html">CSS</a></li>
-  <li><a href="3.html">Java Script</a></li>
+<div id="grid">
 
+  <ol>
+  <li><a href="1.html">HTML</a></li>
+  <li><a href="2.html" style="color:blue;text-decoration-line:overline">CSS</a></li>
+  <li><a href="3.html">Java Script</a></li>
 </ol>
 <ul hidden>
   <li>진아</li>
   <li>채니</li>
   <li>차니</li>
 </ul>
+
+<div id="article">
+<div style="color:blue" > Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media.
+</style> </div>
 
 <h2>Java Script</h2>
 <table hidden>
@@ -38,6 +107,8 @@
 
 자바 나는 파이썬 배우고싶어
 
+</div>
+</div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

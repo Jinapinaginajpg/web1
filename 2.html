@@ -3,11 +3,64 @@
 <head>
 <title>JINA WEB-CSS</title>
 <meta charset ="utf-8">
+
+<style>
+h1 {
+text-align:center;
+border-bottom:1px solid black;
+padding:30px;
+margin:0;}
+
+#grid ol {
+  font-size:20px;
+  border-right:1px solid gray;
+  width: 100px;
+  margin:0;
+  padding-top:40px;
+  padding-left:33px;
+  padding-right:20px;
+}
+body{
+  margin:0;
+}
+
+#grid {
+
+  display:grid;
+  grid-template-columns:180px 1fr;
+}
+
+#article {
+  padding-left :15px;
+}
+
+@media(max-width:600px){
+h1 {
+  border:none;
+}
+ #grid {
+   display:block;
+ }
+#grid ol {
+  border-bottom:2px solid gray;
+  border-right:none;
+  font-size:25.6px;
+  width: 500px;
+  padding-bottom:10px;
+
+}
+
+h2 {
+  font-size:30px;
+}
+}
+    </style>
+
 </head>
 <body>
 
 <h1><a href="index.html">WEB</a></h1>
-
+<div id="grid">
 <ol>
   <li><a href="1.html">HTML</a></li>
   <li><a href="2.html">CSS</a></li>
@@ -19,7 +72,7 @@
   <li>채니</li>
   <li>차니</li>
 </ul>
-
+<div id="article">
 <h2>CSS</h2>
 <table hidden>
   <tr>
@@ -39,6 +92,8 @@
 
 CSS 배우는 중 정말 어렵다~!!
 
+</div>
+</div>
 <div id="disqus_thread"></div>
 <script>
 
